@@ -1,40 +1,42 @@
-# Acceptance Criteria by Mentor
+## Acceptance Criteria for Mentor Review
 
-## Project
+### Project
 
-- **A1** There is an `images` folder in the root of the project containing images.
-- **A2** All vector images (icons) are combined into an SVG sprite `icons.svg` located in the `images` folder.
-- **A3** All vector images are optimized.
-- **A4** There is a `css` folder in the root of the project with style files.
-- **A5** All styles are written in a single file `styles.css`, located in the `css` folder.
-- **A6** File names do not contain uppercase letters, spaces, or transliteration. Names include only English letters and words.
-- **A7** The source code is formatted using Prettier.
-- **A8** All images and text content are taken from the design mockup.
-- **A9** The style normalizer `modern-normalize` is connected.
-- **A10** All styles are written in a single file `styles.css`, located in the `css` folder.
-- **A11** The code follows the guidelines.
+* **A1** All styles are written in a single file `styles.css`, located in the `css` folder.
+* **A2** Source code is formatted using Prettier.
+* **A3** All images and text content are taken from the design mockup.
+* **A4** The modern-normalize stylesheet is included.
+* **A5** Code follows the project guidelines.
 
-## Markup
+### Modal Window
 
-- **B1** All icons use vector graphics in SVG format.
-- **B2** SVG icons are exported correctly. The “group” option is selected during export, not the individual vector.
-- **B3** All icons from the SVG sprite are added to HTML using `<svg>` and `<use>` tags.
-- **B4** Icons are added in the Advantages section (the section without a title above Our Team).
-- **B5** Social media icons are added in the Our Team section.
-- **B7** Social media icons are added in the footer.
-- **B8** HTML markup is completed for all elements in the mockup.
-- **B9** Tags are used according to their semantic meaning.
+* **B1** Markup and styling for the backdrop (dark semi-transparent background) are implemented.
+* **B2** The backdrop covers 100% of the viewport height and width and is fixed.
+* **B3** Markup and styling for the modal window are implemented.
+* **B4** The modal window is centered both vertically and horizontally within the backdrop.
+* **B5** A close button is implemented and styled in the top-right corner of the modal.
+* **B6** The modal window and backdrop are hidden by default.
+* **B7** Adding the `is-open` class to the backdrop makes both the backdrop and modal visible.
 
-## Styling
+### Forms
 
-- **C1** The large image with a dark overlay (under the header) is implemented as a background. A multi-layer background with a gradient is used for the overlay.
-- **C2** The background image in the block under the header does not stretch wider than its original size of 1440px.
-- **C3** Cards in the Our Team section have a constant shadow effect.
-- **C4** Cards in the Our Portfolio section have a shadow effect on hover anywhere on the card.
-- **C5** On hover or focus, icons transition to an active state (change color if specified in the design).
-- **C6** Transitions are applied to all hover and focus effects (color, background, shadow). Duration: 250ms; timing function: cubic-bezier(0.4, 0, 0.2, 1).
-- **C7** Animated properties are explicitly specified in transitions. The value `all` is not used anywhere.
-- **C8** In the main navigation, an underline for the current page link is created using the `::after` pseudo-element.
-- **C9** The overlay with text on cards in the Our Portfolio section appears on hover anywhere on the card.
-- **C10** The blue overlay in the Our Portfolio cards slides up from the bottom.
-- **C11** Pseudo-elements do not contain textual content in the `content` property. They are used only for decorative purposes.
+* **C1** HTML markup for all design elements is implemented.
+* **C2** Tags are used according to their semantic meaning.
+* **C3** The newsletter subscription form and all its elements are implemented in the footer.
+* **C4** The request form and all its elements are implemented in the modal window.
+* **C5** All input elements have a `name` attribute.
+* **C6** The `name` attribute values are descriptive and clearly define the purpose of each field.
+* **C7** All inputs have associated `<label>` elements.
+* **C8** Inputs include a `placeholder` attribute where specified in the design.
+* **C9** Submit buttons have `type="submit"`.
+* **C10** All new icons used in forms are added to the SVG sprite `icons.svg`.
+
+### Styling
+
+* **D1** Styling for the newsletter subscription form in the footer is implemented.
+* **D2** Styling for the request form in the modal window is implemented.
+* **D3** On input focus, the border and icon color change according to the design.
+* **D4** The default checkbox for accepting the license agreement is hidden.
+* **D5** The custom checkbox is styled manually using an SVG checkmark from the sprite.
+* **D6** All hover and focus effects (color, background, shadow) include transitions with duration 250ms and timing function `cubic-bezier(0.4, 0, 0.2, 1)`.
+
